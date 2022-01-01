@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#title{
+text-align:center;
+}
+#description{
+  text-align:center;
+}
+fieldset{
+width: 80vw;
+margin:0 auto;
+ background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;}
+input[type=text]{
+width:50vw;
+margin-top:1em;
+margin-bottom:1em;
+font-size:1.3em;
+margin-left:0.7em;}
+input[type=number]{
+width:50vw;
+margin-top:1em;
+margin-bottom:1em;
+font-size:1.3em;
+margin-left:0.7em;}
+input[type=email]{
+width:50vw;
+margin-top:1em;
+margin-bottom:1em;
+font-size:1.3em;
+margin-left:0.7em;}
+#dropdown{
+width:50vw;
+margin-top:1em;
+margin-bottom:1em;
+font-size:1.3em;
+margin-left:0.7em;
+}
+input[type=radio]{
+margin-left:2em;
+}
+input[type=checkbox]{
+margin-left:2em;
+}
+label{
+font-size:1.4em;
+margin-left:0.5em;
+margin-top:2em;
+margin-bottom:2em;
+}
+textarea{
+  width:50vw;
+margin-left:15px;
+margin-top:1em;
+margin-bottom:1em;}
+button{
+  background-color:green;
+  color:white;
+  width:50vw;
+  margin:0 auto;
+  margin-left:15px
+}
+@media (max-width:900px) {
+input[type=text]{
+width:15vw;
+margin-top:1em;
+margin-bottom:1em;
+font-size:.7em;
+margin-left:0.7em;}
+input[type=number]{
+width:15vw;
+margin-top:1em;
+margin-bottom:1em;
+font-size:.7em;
+margin-left:0.7em;}
+input[type=email]{
+width:15vw;
+margin-top:1em;
+margin-bottom:1em;
+font-size:.7em;
+margin-left:0.7em;}
+#dropdown{
+width:25vw;
+margin-top:1em;
+margin-bottom:1em;
+font-size:1em;
+margin-left:0.7em;
+}
+input[type=radio]{
+margin-left:2em;
+}
+input[type=checkbox]{
+margin-left:2em;
+}
+label{
+font-size:.7em;
+margin-left:0.5em;
+margin-top:2em;
+margin-bottom:2em;
+}
+textarea{
+  width:40vw;
+margin-left:15px;
+margin-top:1em;
+margin-bottom:1em;}
+button{
+  background-color:green;
+  color:white;
+  width:15vw;
+  margin:0 auto;
+  margin-left:15px
+}
+}
+
+
+
